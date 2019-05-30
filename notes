@@ -1,0 +1,85 @@
+5/29
+	https://drb80.slack.com/
+		#cs3250
+		beatys@msudenver.edu
+	contributions
+		git commits
+	time reading book (if you take notes to prove it) count as hours towards class
+	LAs
+		Luke Smith <lsmith@zenoscave.com>
+		Jimmy Morga <jmorga68@msudenver.edu>
+		Lauren Vagts <lvagts@msudenver.edu>
+		Peter Nielson <pnielso2@msudenver.edu>
+		Kelly Trujillo <ktruji25@msudenver.edu>
+	Agile: recognition that customers will change their minds about what they want (and often) based on what you're showing them
+		that's why you want to show them as often as possible
+		individuals and interactions over processes and tools
+		working software over comprehensive documentation
+		customer collaboration over contract negotiation
+		responding to change over following a plan
+	product backlog, sprint backlog
+		product backlog
+			maintained by product owner
+			consists of features, bug fixes, non-functional requirements, etc.
+			often (but not always) stated in story points, using the rounded Fibonacci scale
+			"story point" unit could be defined as an hour, a day, etc.
+				must be agreed upon at outset
+		sprint backlog
+			once a sprint backlog is committed, no additional work can be added except by the team (with consent of product owner)
+	user stories
+	scrum master
+		accountable for removing impediments to the ability of the team to deliver the product goal and deliverables
+		not a dictator
+			there to facilitate, not to take charge
+		helping the team determine the definition of done for the product, with input from key stakeholders
+		educating key stakeholders on scrum principles
+	sprint review vs. sprint retrospective
+		sprint retrospective
+			What went well during the sprint?
+			What could be improved in the next sprint?
+	daily scrum
+		accountability
+		progress
+			What did I finish?
+		what will be done by the next meeting
+			What am I going to do?
+		blockers
+			What is preventing me/us from meeting our sprint goal?
+		sprint review/demo day
+			not necessarily showing code, but what it does
+	Trello
+		used for tracking backlogs
+	additions
+		definition of done
+		velocity
+			total effort a team is capable of in a sprint
+			a good velocity should show actual and expected velocities plateauing
+	three pillars of scrum
+		transparency
+		inspection
+		adaptation
+	https://www.scrumguides.org/
+		https://www.scrumguides.org/docs/scrumguide...
+	(some other link too)
+	trello
+		"scrum by vince" power-up
+		sprint backlog
+		product backlog
+		doing
+		done
+	scrum by vince
+	[estimated story points] task name (actual story points)
+		1, 2, 3, 5, 8, 13
+	don't forget to get your burndown charts before you end your sprint!
+		screenshot or save it somehow, to show your work later
+	toggle for time tracking
+	what five dysfunctions do you find in your team?
+5/30
+	Travis CI
+		testing framework?
+	Sonar Cloud
+		automated tool which allows us to find bugs, vulnerabilities, bad practices
+	CodeCov
+		https://codecov.io/
+	line coverage vs. branch coverage
+	gitflow / git workflow ?
