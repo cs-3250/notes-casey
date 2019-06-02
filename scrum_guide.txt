@@ -1,0 +1,24 @@
+scrum
+	roles
+	events
+	artifacts
+	rules
+three pillars
+	transparency
+	inspection
+	adaptation
+values
+	commitment
+	courage
+	focus
+	openness
+	respect
+roles
+	Product Owner
+		manages & orders Product Backlog
+	Scrum Master
+		promotes & supports Scrum theory, practice, rules, & values
+	Development Team
+		work to create releasable Increments
+		self-organizing
+		3-9 people
