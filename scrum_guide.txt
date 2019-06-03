@@ -1,4 +1,4 @@
-vim: ts=2 sts=2 sw=2
+vim: et ts=2 sts=2 sw=2
 
 scrum
   roles
@@ -19,8 +19,38 @@ roles
   Product Owner
     manages & orders Product Backlog
   Scrum Master
+    servant-leader
     promotes & supports Scrum theory, practice, rules, & values
+      helps everyone understand
+    helps product owner:
+      ensure team understands goals, scope, & product domain
+      find techniques for effective Product Backlog management
+      facilitate Scrum events
   Development Team
     work to create releasable Increments
     self-organizing
+    cross-functional, with all necessary skills
     3-9 people
+    no titles
+Sprint
+  time-boxed <= one month
+  "done", useable, releasable product increment
+  predictability ensured through inspection & adaptation
+  components
+    Planning
+      time-boxed <= max 8 hours for 1-month Sprint
+        less for shorter Sprints
+      set Sprint Goal
+      Development Team answers questions:
+        What can be delivered in the Increment?
+        How will the work needed be achieved?
+    Daily Scrum
+    development work
+    Review
+    Retrospective
+  no changes during Sprint which endanger Goal
+  quality goals do not decrease
+  scope may be renogiated between Product Owner & Team
+  Product Owner may cancel Sprint if Goal becomes obsolete
+    rarely makes sense due to Sprints' short duration
+    undesirable, wasteful, and traumatic to Dev Team
