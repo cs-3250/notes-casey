@@ -1,4 +1,4 @@
-vim: ts=2 sts=2 sw=2
+vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
 
 5/29
   https://drb80.slack.com/
@@ -85,3 +85,157 @@ vim: ts=2 sts=2 sw=2
     https://codecov.io/
   line coverage vs. branch coverage
   gitflow / git workflow ?
+6/03
+	first test: five dysfunctions, head-first
+	second test: effective java
+	don't talk in class
+		first offense: lose 10 points
+		second offense: lose 50(?) points
+		third offense: fail!
+	demo?
+	80% of grade: recorded contributions to team
+	epistemology:
+		know what you know & don't know
+	be humble and receptive to others' ideas
+	cooperate with others
+	be courteous & polite
+	respect authority
+	practice self-control
+		manage procrastination
+	accept responsibility for mistakes
+	resolve conflicts appropriately
+	exhibit positive attitude towards learning
+	participate in class discussions
+		TLA: three-letter acronym
+	be an engaged listener
+	follow directions
+	meet deadlines!
+		front-load!
+			get a head start during first half of sprint
+	ask for help when needed
+	do neat, quality work
+		spelling!
+	positive work ethic
+		accept dynamic change
+	use libraries
+		don't reinvent the wheel
+		don't write linked lists, sorts, etc.
+		steal liberally, cite liberally
+			not doing so is cheating!
+			comment Stack Exchange URLs
+	share what you learn
+		don't hoard information
+	Beaty is Meyers-Briggs ENTP
+		(e for extroverted)
+	don't be too optimistic
+		Life always intrudes.
+	tag each sprint
+	Face-to-Face are more useful than online ones.
+		Don't use e-mail - prefer IMs.
+	SME subject-matter experts
+		interact with customer
+		diplomat for development team
+		capture user requirements
+	Scrum masters can be dev team members.
+		They shouldn't be managers.
+			You want to be able to approach scrum master about blocks.
+	good design (patterns) necessary for larger products
+	Pull requests should always be reviewed. (?)
+	XP (extreme programming)
+		pair programming
+		less experienced team member 'drives'
+	Fixing one thing usually breaks multiple other things.
+	What seems hard ends up being hard.
+		What seems easy ends up being really hard.
+	"The Mythical Man Month" (Fred Brooks)
+		https://en.wikipedia.org/wiki/The_Mythical_Man-Month
+		for physical work, adding workers speeds up process
+		for intellectual work, adding a person to a team 
+		adding team-members increases overhead, further delays a late project
+		difficult to join a team when it's already under pressure
+		O(n^2) problem
+	You haven't done enough static/dynamic analysis(?).
+	You haven't done enough testing.
+	comments
+		indicate you don't understand your code
+		If you have to explain your code, it's shitty code.
+		The only meaningful comments are documentation.
+	maximum things a person can keep in their brain: 6
+		three conditionals + three variables
+		beyond seven: need to chunk
+	method decomposition(?)
+	Nobody cares how hard you worked.
+		the only thing that matters:
+			that the work gets done
+	PEP 8
+		spaces as tabs?
+		blank line spacing
+		compliance checkers available
+	pydocs built in with Sphinx
+	make -C docs
+		means make, but change to 'docs' directory
+		or you could just cd to 'docs' first, then make
+	auto-generate .gitignore:
+		https://www.gitignore.io/api/python
+6/05
+  Product owner does presentation
+  definition of done
+    95% code coverage
+  'velocity':
+    number  of story points per user story
+  be up front with the customer about what you can & can't get done
+  Software Engineering
+    Software is everywhere and most of it is crap.
+      costly - bug reports, workarounds
+      Everything nowadays depends on software.
+        average 29 computers in a car nowadays
+      We can have an influence in areas of personal interest.
+        Dr. Beaty spent 5 years at National Atmospheric Research Laboratory (NARL) in Boulder
+    "Cathedral and the Bazaar" - about closed- vs. open-source software
+      https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar
+    WhatsApp
+      built by 50 engineers in Silicon Valley in erlang
+      Facebook later bought it for $19 billion.
+    Software is complex
+      https://informationisbeautiful.net/visualizations/million-lines-of-code
+      Boeing 747
+        28 months with 4.5k people work 40 hours/week:
+          20,160,000 person hours
+      Red Hat Linux 7.1
+        30 million SLOC (source lines of code)
+        8k person years
+        2k hours/year
+        16m person-hours
+      Linux kernels approaching 500m SLOC
+      Windows approaching 50m SLOC
+      Choose the right language for the problem.
+        Java was originally designed for "set-top boxes" (embedded systems).
+          https://www.javaworld.com/article/2077072/feature--java----coming-to-a-tv-near-you-.html
+          https://en.wikipedia.org/wiki/Set-top_box
+        C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to make utilities running on Unix.
+          https://en.wikipedia.org/wiki/C_(programming_language)
+      Purify by Rational
+        memory leak tracker, bought by IBM
+      The Magical Number Seven, Plus or Minus (George Armitage Miller)
+        https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two
+        size of early hunting parties?
+        size of sports team
+        digits in phone number
+        complexity of a computer program
+          variables, nesting, cyclomatic complexity
+      Mariner 1 - $18.5m unmanned 1962 spacecraft lost in 1963 due to coding error
+        https://en.wikipedia.org/wiki/Mariner_1#Overbar_transcription_error
+      Therac 25
+        cancer treatment device
+        at least six massive radiation doses administered between 1985-1987
+        https://en.wikipedia.org/wiki/Therac-25
+        https://www.bugsnag.com/blog/bug-day-race-condition-therac-25
+      Mars Climate Orbiter
+        pounds-seconds vs. newton-seconds software error
+      Siemens industrial control systems at Iranian nuclear facility infected by Stuxnet
+        supposedly designed by US & Israeli governments
+        broke half of centrifuges by spinning up & down
+      787 Dreamliner
+        according to FAA, there's a software bug that can cause its electrical system to fail and lead to a loss of control
+        Even in 2015, our airplanes have integer overflow bugs.
+      https://spectrum.ieee.org/aerospace/aviation/how-the-boeing-737-max-disaster-looks-to-a-software-developer
