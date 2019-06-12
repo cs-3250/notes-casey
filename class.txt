@@ -239,3 +239,127 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
         according to FAA, there's a software bug that can cause its electrical system to fail and lead to a loss of control
         Even in 2015, our airplanes have integer overflow bugs.
       https://spectrum.ieee.org/aerospace/aviation/how-the-boeing-737-max-disaster-looks-to-a-software-developer
+6/06
+  Boeing 737 MAX
+    300 people died!
+    did gov't shutdown prevent code review?
+  DIA
+    automated baggage system:
+      16 months past its hard deadline
+      $560m over budget
+      cost $1m/month to try to keep running
+  Chaos '95
+    $250b that year on IT development of 175k projects
+    US companies pay $81b/year for cancelled software projects
+    $59b for delays
+    average 16.2% of software completed on time and on budget
+      only 9% at larger companies!
+    largest companies completed only 42% of originally proposed features
+      better at smaller companies: 78%
+    "No Silver Bullet – Essence and Accident in Software Engineering" (Fred Brooks, author of "The Mythical Man Month")
+      "There is no single development, in either technology or management technique, which by itself promises even one order of magnitude [tenfold] improvement within a decade in productivity, in reliability, in simplicity."
+        We aren't doing any better than we had ever done.
+        There is an up to tenfold difference between an ordinary designer/developer and a great one.
+          He found no correlation to any personality test.
+  halting problem:
+    We can never know whether a program stops.
+      https://en.wikipedia.org/wiki/Halting_problem
+  software engineering (coined by Margaret Hamilton - worked on Apollo 11)
+    the study and application of engineering to design, develop, and maintain of software
+    https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)
+  "user story"
+    agile lingo for program requirements
+  functional requirement
+    what the program must do - yes/no
+  non-functional requirements
+    the manner in which the functional requirements need to be achieved
+    performance, reliability, usability, maintainability
+    not user-visible
+      can be just as important as functional requirements though
+    example:
+      code coverage
+      Sonar Cloud maintainability indices
+  design constraints
+    platform
+    language
+    database
+    web-app vs. GUI, etc.
+6/10
+  incoming diff patch
+  Peter: graphs
+  burndown charts:
+    show how far along project is compared to where you should be
+    green line: what you should have done
+    use as a tool to diagnose team activity
+  local repository:
+    only lives on your machine
+    git init: initializes local repository
+    git branch: creates a new branch/version/copy
+    git add: stages a file/change
+    git commit: commit staged changes
+    git merge: merge a branch into a target branch
+    git checkout: switch branches
+  you can push changes directly to another teammate's copy of a repository via SSH or gitweb
+  "pull requests" and "branch protection" are features of github - not git
+  we should only demo from master branch
+    pull requests to master branch *must* be approved by LA
+  a pull consists of a fetch and a merge
+  git branch remove {branch name}
+    do this after you're finished with a feature branch
+  'E2E' (end-to-end) testing (= integration testing?)
+  graphs: the most used data type
+    linked lists: specialized graphs
+      node
+    vertices
+      data
+        name
+      function
+      O-N edges
+    edges
+      allow movement to other vertices
+      can have 'weights'
+    applications
+      networks, network topologies
+      advanced math
+      functional programming
+      machine learning
+        neural networks
+      graph databases
+      game development
+    weighted vs. unweighted
+      weights: distance, importance, etc.
+      unweighted: edges effectively equivalent
+    directed vs. undirected
+      directed ('digraph')
+    a 'multigraph' (in contrast to a simple graph) can have "parallel edges" with different weights & directions
+    connectedness
+      given any vertex, can you reach any other vertex through legal edge movements?
+    "fully connected"
+      can every vertex reach every other vertex through a SINGLE EDGE traversal?
+    does a path exist?
+    Dijkstra's algorithm
+      finds the most efficient possible path between two vertices, if such a path exists
+    adjacency list
+      list of linked lists
+      each vertex is the head of a linked list (or a list, array, etc.)
+        the linked list holds their edges (and weights, if they exists)
+    adjacency matrix
+      matrix of vertices
+        row & column titles are the vertices
+        row-column indices are edge weights (or edge existence)
+        from rows to columns
+    lists:
+      more common
+      usually easier to visualize/conceptualize
+      adding edges is slow
+      many algorithms are slow or very individualized
+    matrices:
+      most algorithms extremely fast in comparison
+      searches and traversals are very mathematical
+      adding vertices is slow
+      progressively more complex with size
+    graph library for Python:
+      NetworkX: https://networkx.github.io/
+        has graphs, digraphs, and multigraphs
+        well tested (>90% coverage)
+        very OO compliant)
