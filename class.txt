@@ -363,3 +363,97 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
         has graphs, digraphs, and multigraphs
         well tested (>90% coverage)
         very OO compliant)
+6/12
+  leverage python's strengths
+    dictionaries
+    method references
+      pythonic methods are first-class objects and can be passed as arguments
+  functional requirements: user visible
+    absolute - yes or no
+    users care more about these
+  we as developers care more about non-functional requirements
+    on a scale
+  analysis
+    static (before runtime)
+      e.g. Sonar, PyLint, Radon (also Python)
+    dynamic
+      Spotbugs (Java), Valgrind (C/C++), Purify
+  testing (QA - quality assurance)
+    acceptance: customer says it's what they wanted
+    unit: per-method
+      write unit tests before functionality
+        make sure it fails first
+        commit when it passes
+      industry best practice
+        *You want this on your résumé.*
+        It will help you get a job.
+      bottom-up approach to testing
+        "You can't polish a turd."
+      YAGNI ("You ain't gonna need it.")
+        don't write a method until you need it
+    integration: per class
+    system
+      black box testing
+        by unbiased users
+          things developers won't have thought about
+  TDD (test-driven development) mindset
+    not how it will work
+      ... but how it will break!
+    1:1 SLOC tests:code
+  "Psychology of Programming"
+    programming is a creative (but maybe not artistic) activity
+    there is no one best way to do it
+  implementation
+    requirements engineering
+      what does the customer *really* want?
+        how to elicit that information?
+  management vs. leadership
+    "Good or Great?" (Jim C. Collins)
+      https://en.wikipedia.org/wiki/Good_to_Great
+      https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6
+    leadership: direction
+    getting there: management
+  "The Elements of Style" (Strunk & White)
+    https://en.wikipedia.org/wiki/The_Elements_of_Style
+  guidelines
+    naming
+      use good, descriptive names
+    use libraries
+    do code reviews
+      "Many eyes make shallow bugs."
+        "You don't have to be a code wizard to have a positive impact on code quality."
+        "Code is read far more often than written."
+          https://twitter.com/thockin/status/927942054377766912
+      https://www.johndcook.com/blog/2009/10/25/shallow-bugs-reported-bugs/
+  quicksort vs. bubblesort for presorted list
+    quicksort: nlogn
+    bubblesort: n
+  DJUG (Denver Java Users Group)
+    https://www.meetup.com/DenverJavaUsersGroup/
+    Pivotal Labs in RiNo
+    always recruiters there
+  DRY ("Don't repeat yourself.")
+  Agile
+    Waterfall
+      first gather all requirements
+      then do all architecture (how the pieces fit together)
+      then do all design
+      then do all implementation
+      then do all the testing
+    for one, we don't want to put tests off until the end
+    secondly, things change
+    Agile emphasizes the human & team aspects of software
+    shorter iterations, release cycles
+      incremental design
+      user involvement
+      light on documentation
+      informal communication
+      accept change
+        gather requirements continually
+        acknowledge new user requirements
+          but make them understand the ramifications of their decisions
+          say, "Yes, *and*..."
+            your change is going to impact the delivery date
+      shown that users will be happiest in the end if they see the growth of the entire product
+        when they feel like they have had input
+        when they have seen the functionality develop from its most rudimentary incarnation
