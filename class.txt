@@ -457,3 +457,36 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
       shown that users will be happiest in the end if they see the growth of the entire product
         when they feel like they have had input
         when they have seen the functionality develop from its most rudimentary incarnation
+6/13
+  engine should be separated from game for reusability
+    user ↔ CLI ↔ game engine ↔ state.yml
+  This is MVC:
+    model: state.yml
+    view: CLI
+    controller: game engine
+  we must use YAML
+  SME advises a REPL
+  we want to have functions for every action
+  upon evaluation, we determine whether the loop should end
+    e.g. error, exit, save, win, etc.
+  we must be able to go in all cardinal directions
+  directions must mirror one another
+    if I go east to one room, I should be able to go back west to the first room
+  rooms should be able to contain items
+    e.g. swords, bags, etc.
+  rooms should have a 'visited' parameter
+  NPCs (non-player characters)
+    just other players, as far as the game is concerned
+    "model-actor" design pattern
+      basically you have a giant table
+  state:
+    room I'm in
+    objects I have
+  swordless state ➜ pick up sword ➜ sword-weilding state
+  viability testing:
+    time & effort required
+  YAML is like JSON
+    but doesn't nest as well
+  PyTest requires method names start with "test_"
+    Luke thinks file names should start with "Test"
+    Luke puts all his tests in a "tests" subdirectory
