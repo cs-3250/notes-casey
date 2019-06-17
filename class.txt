@@ -490,3 +490,54 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
   PyTest requires method names start with "test_"
     Luke thinks file names should start with "Test"
     Luke puts all his tests in a "tests" subdirectory
+6/17
+  our brains can instantly recognize seven or fewer items
+    but eight items or more need to be chunked
+    that's why cyclomatic complexity is important
+      it's a physical limitation we have
+  Agile
+    emphasizes short releases and iterations
+    all of the approaches preceding Agile have broken down
+      because the stuff that we're building has gotten too big
+    incremental design
+    user involvement is crucial
+      that's the only way we can be sure they get want they want
+        (not what they thought they wanted)
+    lightweight documentation
+    willingness to change
+    doesn't: reduce the overall development time
+      does: put partially-working products into the user's hands all the time
+    Waterfall used to have two-year cycles!
+      therefore of course everybody procrastinated
+    RUP: 100 tasks and 30 roles
+      https://sceweb.uhcl.edu/helm/RationalUnifiedProcess/process/workers/ovu_works.htm
+      Rational Unified Process
+      the process ended up taking up more times than the actual work
+    eliminate comments in code
+      refactor and eliminate comments
+      the code may change, while the comments may not
+        If the comments disagree with the code, they're both wrong.
+      exception: API documentation
+    finished product always available
+  18-24 months:
+    ask whether you are happy in your job
+    you do not want to get left behind!
+  'scrumfall'
+    waterfall-agile hybrid
+  agilemanifesto.org
+    individuals and interactions over processes and tools
+      how we interact with the people who are writing the checks
+    working software over comprehensive documentation
+      if i'm documenting something that doesn't exist or doesn't work...
+        i'm wasting my time
+      large amounts of documentation can become cumbersome and out of sync
+    customer collaboration over contract negotiation
+      we want highly involved, highly engaged customers
+        difficult when dealing with governments - they want contracts
+    responding to change over following a plan
+      once you recognize that the plan is flawed, change it
+      vast expectations, half-vast implementations
+  good process won't fix bad team members
+    firing people is necessary
+  "S&M people" - sales & marketing, LOL
+  make sure your boundary router has uPNP turned off
