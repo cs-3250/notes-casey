@@ -541,3 +541,78 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
     firing people is necessary
   "S&M people" - sales & marketing, LOL
   make sure your boundary router has uPNP turned off
+6/19
+  room 200K, noon
+    Peter will go over resolving merge conflicts
+    also Luke will go over mock (at the same time?)
+  design patterns
+    a general reusable solution to a commonly occurring problem
+      within a given context in software design
+    creates a shared vocabulary among professionals
+      shared understanding
+      abstraction
+      reusability
+    origins go back to actual architecture/planning
+      Christopher Alexander (1977/79)
+        1987: Kent Beck & Ward Cunningham began exploring applications in software
+        Alexander's work led directly to creation of the first wiki
+        it also went on to influence the emergence of OO & the Agile philosophy
+        "generative grammar"
+          fractal: an object which has non-integral (not whole numbers?) dimensions
+        "The Timeless Way of Building" (1979)
+        Alexander's "Notes on the Synthesis of Form" was once required reading in CS
+        "A Discipline of Programming" (Dijkstra) also influenced by Alexander
+        as was SimCity
+    categories
+      creational patterns
+      structural patterns
+      behavioral patterns
+      designed using the concepts of:
+        delegation
+        aggregation
+        consultation
+    object-oriented design - objects that represent things and do things
+      a abstraction
+      e encapsulation
+      i inheritance
+      o+p (polymorphism
+    design patterns vs. principles - know the difference
+      principles
+        OO
+          identify the aspects of your application that vary
+            separate them from what stays the same
+            ability to change one thing without breaking everything else
+          program to an interface - not an implementation
+            "Pay no attention to the man behind the curtain."
+            so in Java, program to supertype - not a subtype
+              e.g. program to Map - not HashMap
+            in the interface, only expose parts that clients need
+            Smalltalk (Adelle Goldberg, ~1980)
+          favor composition over inheritance
+            inheritance limits reusability
+      patterns
+        strategy pattern (behavioral)
+          define a family of algorithms, encapsulate each one, make them interchangeable
+          lets the algorithm vary independently from the clients that use it
+        observer pattern ('officially' behavioral, but also kinda structural too)
+          one-to-many dependency
+            helps decouple objects
+          on object (called the subject) maintains a list
+            of its dependents (called observers)
+            and notifices them automatically of any state changes
+          a key part of the MVC pattern
+          Java: Observer, Observable
+          Javascript: EventListener
+          subject:
+            attach(), detach(), notify()
+          observer:
+            update()
+        strive for loosely-coupled designs between objects that interact
+          cohesive: do one thing and do it well
+          loosely-coupled: objects know very little about each other
+        don't depend on the order of evaluation of notifications
+        Java Observable not an interface
+        mustinherit
+        setChanged() is protected
+  celsius to fahrenheit
+    double it and add 32
