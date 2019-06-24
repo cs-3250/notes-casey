@@ -575,7 +575,7 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
       a abstraction
       e encapsulation
       i inheritance
-      o+p (polymorphism
+      o+p (polymorphism)
     design patterns vs. principles - know the difference
       principles
         OO
@@ -616,3 +616,70 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
         setChanged() is protected
   celsius to fahrenheit
     double it and add 32
+6/20
+  midterm: 06/27/2019
+  evaluations from each person on the team will be a part of your grade
+  "Make sure that whatever company you work for...
+    they want to help you grow and you want to help the company grow."
+6/24
+  decorators
+    have the same object as the objects they decorate
+    add behavior before and/or after delegating object
+  factory pattern (creational)
+    handles the details of object creation
+      encapsulates the creation of a subclass
+      decouples interface from creation
+    can return a variety of types
+    can add additional types easily
+    if static, can't subtype to extend
+    factories don't necessarily have to return abstract types
+      a default concrete implementation can be used
+      creation through inheritance
+      creates objects of a single type
+    abstract factory
+      creation through composition
+      instantiated via new and passed back
+      create families of related objects via factories
+    dependency inversion
+      depend upon abstractions - not concrete classes
+      By dictating that both high-level and low-level objects must depend on the same abstraction this design principle inverts the way some people may think about object-oriented programming
+        https://quizlet.com/227196875/solid-design-principles-flash-cards/
+      implementation decoupled from interface
+      references should be to supertypes - not concrete classes
+      no class should derive from a concrete class
+      no method should override an implemented method of any of its base classes
+        https://bowenli86.github.io/2016/04/14/best%20practices/design%20pattern/Design-Pattern-Strategy-Pattern-Program-to-an-interface-not-an-implementation/
+        http://stg-tud.github.io/sedc/Lecture/ws13-14/3.5-DIP.html#mode=document
+    dependency injection
+      a technique whereby one object (or static method) supplies the dependencies of another object
+      a dependency is an object that can be used (a service)
+      an injection is the passing of a dependency of a dependency to a dependent object (a client)
+      https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/
+    IoC inversion of control (design principle) - frameworks vs. libraries
+      you call a library; a framework calls you
+      custom portions of a computer program receive the flow of control from a generic framework
+  singleton
+    there's only one object which always gets returned
+    uses:
+      thread pools, caches, dialog boxes, preferences, logging, device drivers, I/O
+    lazy initialization
+    private constructor with no arguments to prevent extension
+    double-checked locking
+      https://errorprone.info/bugpattern/DoubleCheckedLocking
+      https://rules.sonarsource.com/java/tag/multi-threading/RSPEC-2168
+      https://stackoverflow.com/questions/7855700/why-is-volatile-used-in-double-checked-locking
+      'synchronized' Java keyword makes method (or block of code - with object parameter) thread-safe
+        prevents two threads from running simultaneously
+      'volatile' Java keyword writes directly to main memory, bypassing registers and caches
+        ensures visibility
+        when you read from a volatile variable...
+          *all* thread-visible variables are re-read from memory
+        when you write one...
+          all thread-visible variables up to that line are written directly to memory
+    atomic
+      reads and writes are atomic for reference variables and most primitives
+      also for variables declared volatile
+    Scala is better suited to parallelization
+      the JVM can run it, so put your parallel code in Scala
+    Java Concurrency in Practice
+  serialization
