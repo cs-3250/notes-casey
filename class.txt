@@ -683,3 +683,154 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
       the JVM can run it, so put your parallel code in Scala
     Java Concurrency in Practice
   serialization
+6/26
+  test
+    design principles
+    compare and contrast the facade and the adapter
+  command pattern (behavioral)
+    object used to encapsulate all info needed to perform an action or trigger an event at a later time
+    client - responsible for creating a concrete command and setting its receiver
+    invoker holds a command object at some point and calls its execute() method
+    command declares an interface that has at least an execute() method
+    receiver knows how to perform the work
+    concrete command is the difference from observer
+  adapter
+    convert one interface into another
+    object adapters use composition
+    class adapters use inheritance
+  façade
+    a unified interface to a set of interfaces in a subsystem
+    a higher-level interface that makes the subsystem easier to use
+      "ratchets up the abstraction"
+      you call this one thing and it calls a bunch of other things
+    pushing one button to turn on your entertainment system
+    an adapter alters an interface to make it usable
+  what's the difference between an adapter and a facade?
+      a façade makes a complicated interface easier to use
+  MVC (architectural pattern)
+    command
+    observer
+    inversion of control
+    delegates
+  principle of least knowledge
+    talk to only immediate friends
+    decouples
+    law of demeter
+    methods may talk to:
+      their own object
+      objects passed as parameters
+      objects they instantiate
+      instance variables
+  template (behavioral)
+    defines a program skeleton of an algorithm in an operation
+    lets one redefine certain steps of an algorithm without changing the algorithm's structure
+    examples:
+      abstract classes
+      hooks
+        allow the concrete algorithm to be defined at runtime
+      both the strategy and the template patterns encapsulate objects
+        strategy via composition
+        template via inheritance
+          the factory pattern (creational) is a very specialized template pattern
+            factories are abstract, and they might have several concrete implementations
+            they return one of their subclasses
+7/1
+  we're doing it wrong
+    need to use TDD
+    need to communicate more with the customer about where we're not done
+  iterator pattern
+    moves the task of traversal outside of data structures
+    in Java, the old Enumeration has been supplanted by Iterators, which allow for removal
+  design principle:
+    a class should have only one reason to change (single-responsibility principle)
+  composite pattern
+    allows you to compose objects into tree structures
+      at every level, the thing below is the same type as the thing above
+        part/whole relationship
+      we can treat individual objects uniformly, use the same operations
+        (polymorphism)
+  low coupling, high cohesion
+  finite state machines
+    states: vending machine, elevator, lock, turnstile
+    an alternative to a jungle of conditional statements
+    similar to strategy
+      strategy is an alternative to subclassing, as it uses compositiion
+  getting a job
+    networking helps
+    DJUG https://www.meetup.com/DenverJavaUsersGroup
+  join:
+    ACM (Association of Computing Machinery)
+    IEEE
+  "You're either part of the solution or part of the precipitate." LOL
+  people are hired in order to solve problems
+  market yourself
+    print up some business cards
+  github
+    your schoolwork
+    gists
+  create and give a presentation or two
+  your résumé will first be filtered by an HR program
+    it must be buzzword compliant
+      you must mention all of the things that they say are required
+    you have ~5 seconds to catch someone's attention
+    don't put your address
+      the message is that you want a short commute
+        probably not the message you want to convey
+    don't use your school e-mail address
+    don't list your required courses
+      *do* list your electives
+    don't list your IDEs
+      nobody cares
+    don't put in objectives
+      "Your objective doesn't solve their problems - it adds to them."
+      however, objectives and targetted information *can* go into the cover letter
+    do list your languages, ordered by level of experience
+      generally the expectation is strongest first
+    do list upper-division school projects
+    do list Scrum, GitHub, design patterns, TDD, Travis (CI/CD), Sonar Cloud
+    mention Linux
+    say what your role was and what you actually accomplished
+      don't say "I was responsible for..." (doesn't mean you actually did it)
+    do be very careful with spelling, grammar, and formatting
+      it's what we do
+        we write clean code without errors
+        we should be able to spell
+      don't change fonts, justifications, etc.
+        be consistent
+7/3
+  kinds of interviews
+    phone screening
+    online quiz
+    sharing a meal (use good table manners)
+    oftentimes you'll either begin or end the day with human resources
+  arrive at least 15 minutes early, but enter the building 8-10 minutes early
+  bring extra copies of your résumé
+  follow up
+    ideally the same day
+    at least with the hiring manager
+      if you have other people's e-mails, do the same with them
+    may be the best predictor of getting a job
+    e-mail is okay
+  dress well
+  body language
+    make eye contact
+      otherwise people don't trust you
+    don't cross your arms or legs
+      shows defensiveness
+      looks like you aren't listening
+    lean towards the person talking to you
+      if you lean back, you are disconnecting
+      leaning in shows interest
+    try to avoid your nervous habits
+      just do your best
+      to avoid distractions
+  don't wear Axe
+    some people may be sensitive/allergic
+  what you want
+    you're interviewing them just as much as they are you
+    ask them questions
+      shows you're interested
+      make sure it's a place where you want to build your career
+    maybe check out glassdoor in advance
+    is lateral movement possible (among different teams)
+    how do you support my professional development?
