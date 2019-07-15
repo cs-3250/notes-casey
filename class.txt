@@ -86,97 +86,97 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
   line coverage vs. branch coverage
   gitflow / git workflow ?
 6/03
-	first test: five dysfunctions, head-first
-	second test: effective java
-	don't talk in class
-		first offense: lose 10 points
-		second offense: lose 50(?) points
-		third offense: fail!
-	demo?
-	80% of grade: recorded contributions to team
-	epistemology:
-		know what you know & don't know
-	be humble and receptive to others' ideas
-	cooperate with others
-	be courteous & polite
-	respect authority
-	practice self-control
-		manage procrastination
-	accept responsibility for mistakes
-	resolve conflicts appropriately
-	exhibit positive attitude towards learning
-	participate in class discussions
-		TLA: three-letter acronym
-	be an engaged listener
-	follow directions
-	meet deadlines!
-		front-load!
-			get a head start during first half of sprint
-	ask for help when needed
-	do neat, quality work
-		spelling!
-	positive work ethic
-		accept dynamic change
-	use libraries
-		don't reinvent the wheel
-		don't write linked lists, sorts, etc.
-		steal liberally, cite liberally
-			not doing so is cheating!
-			comment Stack Exchange URLs
-	share what you learn
-		don't hoard information
-	Beaty is Meyers-Briggs ENTP
-		(e for extroverted)
-	don't be too optimistic
-		Life always intrudes.
-	tag each sprint
-	Face-to-Face are more useful than online ones.
-		Don't use e-mail - prefer IMs.
-	SME subject-matter experts
-		interact with customer
-		diplomat for development team
-		capture user requirements
-	Scrum masters can be dev team members.
-		They shouldn't be managers.
-			You want to be able to approach scrum master about blocks.
-	good design (patterns) necessary for larger products
-	Pull requests should always be reviewed. (?)
-	XP (extreme programming)
-		pair programming
-		less experienced team member 'drives'
-	Fixing one thing usually breaks multiple other things.
-	What seems hard ends up being hard.
-		What seems easy ends up being really hard.
-	"The Mythical Man Month" (Fred Brooks)
-		https://en.wikipedia.org/wiki/The_Mythical_Man-Month
-		for physical work, adding workers speeds up process
-		for intellectual work, adding a person to a team 
-		adding team-members increases overhead, further delays a late project
-		difficult to join a team when it's already under pressure
-		O(n^2) problem
-	You haven't done enough static/dynamic analysis(?).
-	You haven't done enough testing.
-	comments
-		indicate you don't understand your code
-		If you have to explain your code, it's shitty code.
-		The only meaningful comments are documentation.
-	maximum things a person can keep in their brain: 6
-		three conditionals + three variables
-		beyond seven: need to chunk
-	method decomposition(?)
-	Nobody cares how hard you worked.
-		the only thing that matters:
-			that the work gets done
-	PEP 8
-		spaces as tabs?
-		blank line spacing
-		compliance checkers available
-	pydocs built in with Sphinx
-	make -C docs
-		means make, but change to 'docs' directory
-		or you could just cd to 'docs' first, then make
-	auto-generate .gitignore:
-		https://www.gitignore.io/api/python
+  first test: five dysfunctions, head-first
+  second test: effective java
+  don't talk in class
+    first offense: lose 10 points
+    second offense: lose 50(?) points
+    third offense: fail!
+  demo?
+  80% of grade: recorded contributions to team
+  epistemology:
+    know what you know & don't know
+  be humble and receptive to others' ideas
+  cooperate with others
+  be courteous & polite
+  respect authority
+  practice self-control
+    manage procrastination
+  accept responsibility for mistakes
+  resolve conflicts appropriately
+  exhibit positive attitude towards learning
+  participate in class discussions
+    TLA: three-letter acronym
+  be an engaged listener
+  follow directions
+  meet deadlines!
+    front-load!
+      get a head start during first half of sprint
+  ask for help when needed
+  do neat, quality work
+    spelling!
+  positive work ethic
+    accept dynamic change
+  use libraries
+    don't reinvent the wheel
+    don't write linked lists, sorts, etc.
+    steal liberally, cite liberally
+      not doing so is cheating!
+      comment Stack Exchange URLs
+  share what you learn
+    don't hoard information
+  Beaty is Meyers-Briggs ENTP
+    (e for extroverted)
+  don't be too optimistic
+    Life always intrudes.
+  tag each sprint
+  Face-to-Face are more useful than online ones.
+    Don't use e-mail - prefer IMs.
+  SME subject-matter experts
+    interact with customer
+    diplomat for development team
+    capture user requirements
+  Scrum masters can be dev team members.
+    They shouldn't be managers.
+      You want to be able to approach scrum master about blocks.
+  good design (patterns) necessary for larger products
+  Pull requests should always be reviewed. (?)
+  XP (extreme programming)
+    pair programming
+    less experienced team member 'drives'
+  Fixing one thing usually breaks multiple other things.
+  What seems hard ends up being hard.
+    What seems easy ends up being really hard.
+  "The Mythical Man Month" (Fred Brooks)
+    https://en.wikipedia.org/wiki/The_Mythical_Man-Month
+    for physical work, adding workers speeds up process
+    for intellectual work, adding a person to a team 
+    adding team-members increases overhead, further delays a late project
+    difficult to join a team when it's already under pressure
+    O(n^2) problem
+  You haven't done enough static/dynamic analysis(?).
+  You haven't done enough testing.
+  comments
+    indicate you don't understand your code
+    If you have to explain your code, it's shitty code.
+    The only meaningful comments are documentation.
+  maximum things a person can keep in their brain: 6
+    three conditionals + three variables
+    beyond seven: need to chunk
+  method decomposition(?)
+  Nobody cares how hard you worked.
+    the only thing that matters:
+      that the work gets done
+  PEP 8
+    spaces as tabs?
+    blank line spacing
+    compliance checkers available
+  pydocs built in with Sphinx
+  make -C docs
+    means make, but change to 'docs' directory
+    or you could just cd to 'docs' first, then make
+  auto-generate .gitignore:
+    https://www.gitignore.io/api/python
 6/05
   Product owner does presentation
   definition of done
@@ -834,3 +834,281 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
     maybe check out glassdoor in advance
     is lateral movement possible (among different teams)
     how do you support my professional development?
+7/8
+  deciding which items from product backlog
+  ERD (entity relationship diagram)
+  if you have a task that's more than three story points...
+    it needs to be broken down
+  CVE (Common Vulnerabilities and Exposures)
+  getting a job continued
+    get what you want
+      trailing edge technology traps you
+      check the turnover rate
+      what are the work conditions?
+      which toolchain?
+      which software engineering lifecycle?
+      TDD?
+      benefits
+        health, vacation, retirement
+  what they'll ask you
+    computer science stuff (CS2 stuff)
+      lists, heaps, queues, Big-O
+      OO
+        what's an interface?
+        what's multiple inheritance?
+      imperative vs. functional programming languages
+      deep vs. shallow copies
+      dependency inversion, inversion of control
+      design patterns
+      SOLID
+        S single-responsibility: classes do one thing
+        O open-closed principle
+        open for extension, closed for modification
+        L Liskov substitution principle: objects in a program should be replaceable with instances of their subtypes without altering the correctness of the program
+        I interface segregation principle
+          many client-specific interfaces are better than one general purpose interface
+        D dependency inversion
+      networks
+        CIDR classless interdomain routing system
+          https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+      software engineering
+        git, github
+        Agile Manifesto
+        TDD
+        DRY, YAGNI
+        CI/CD
+      web
+        MVC
+        ORM object-relational mapping
+          https://en.wikipedia.org/wiki/Object-relational_mapping
+        AJAX
+    what you've done
+      specifics
+    language/framework specifics
+      what's a lambda?
+      what's a closure?
+    Hire With Your Head
+      how to think about the type of people that you need
+    "We speak not only to tell other people what we think,
+      ... but to tell ourselves what we think. Speech is a part of thought."
+        Oliver Sacks
+    a complete computer science study plan to become a software engineer
+      https://github.com/jwasham/coding-interview-university
+    Cracking the Coding Interview
+    Tennille Hamler
+      STEM Career Specialist
+    Molly Weller Thompson
+      Assistant Director of Work-Based Learning (Computer Science)
+7/10
+ consider static factory methods instead of constructors
+   one advantage is they have names (WHY IS THIS AN ADVANTAGE? AREN'T CONSTRUCTORS NAMED FOR OBJECTS?)
+     constructors do not and one has to differentiate via parameters (DIFFERENTIATE HOW?)
+     this can be confusing and lead to errors
+   a class can have only one constructor with a given name
+     don’t change order of constructor parameters to differentiate
+   static factory methods don’t have to create a new object
+     constructors always do
+     maybe there’s an object already created that works
+     helps with immutable classes and pre-constructed instances
+   singletons, flyweights, non-instantiable (WHAT IS A FLYWEIGHT?)
+     singletons don’t play well with each other in Python (WHY NOT?)
+   can return a subtype (WHAT CAN RETURN A SUBTYPE?)
+     java.util.collections contains all static methods that work on many types
+     polymorphic
+     addAll, binarySearch, disjoint, frequency, min, max, sort, shuffle, reverse, ...
+     type returned can be non-public
+     can vary implementation
+     returned class ned not exist at the time the class is written
+       allows run-time specification
+       JDBC an example
+   service provider framework
+     service interface
+     provider registration
+     service access
+     optional service provider interface
+       factory to create service provider
+   Java 6
+     general-purpose java.util.ServiceLoader
+       so you don’t have to write your own
+   disadvantages
+     classes without public or protected constructors cannot be sub-classed
+     not called out in Javadoc
+   popular Java static factory names
+     valueOf, getInstance, newInstance, getType,...
+   consider a Builder when Faced with Many Constructor Parameters
+ consider a Builder when faced with many constructor parameters
+   create empty instance and have many set()s
+     problem: instance in inconsistent state
+   builder pattern
+   build() is a parameter-less static method
+   required parameters passed in to constructor
+     optionals set()
+     other languages have optional parameters instead
+ builder for class hierarchies
+   recursive type parameters
+   “abstract class pizza” - page
+ New York Pizza (book)
+   builder gets called with a size and objects call requireNonNull(size)
+   when you are extending an abstract class it
+ calzone
+ enforce the singleton property with a private constructor or an enum type
+   up to 1.5, two ways….
+ private no-Arg constructor
+ 1.5: Enumeration
+ enforec non_instatiability with private constructor (ENFOREC??)
+   just have a private no-args constructor
+     if have any no-args constructor, the default isn’t created
+   class connote be sub-classed
+     subclasses would need to call constructor
+     might want to have constructor throw an AssertionError
+       just be safe
+7/11
+  Selenium
+    https://www.seleniumhq.org/
+  private no-args constructor
+  dependency injection
+    dictionary for spell checker
+    injected at runtime
+    helps preserve (behavioral) immutability
+    DI frameworks (e.g. Spring for Java)
+  Java autoboxing & autounboxing
+    automatic conversion between primitives and primitive wrapper objects
+    avoid creating unnecessary objects
+      use literals and valueOf()
+      or anything else stateless (adapters)
+      Java creates a finite state machine to evaluate regular expressions
+    stack memory leaks
+      dangling references, etc.
+  Law of Demeter
+    https://en.wikipedia.org/wiki/Law_of_Demeter
+    principle of least knowledge
+    loose coupling
+  avoid finalizers
+    unpredictable
+    often dangerous
+    generally unnecessary
+    not like C++ destructors
+      those are called immediately
+      Java uses try/finally
+        one never knows when/if a finalizer is called
+    There are also finalizer exploits.
+      https://www.ibm.com/developerworks/library/j-fv/index.html
+      https://stackoverflow.com/a/48533478/837710
+      an extending class overrides finalizer
+    preferred alternative:
+      implement AutoClosable
+  like python 'with' context block:
+    try (BufferedReader br = new BufferedRead (new FileReader(path)))
+      {return br.readLine();}
+  equivalence relation
+    reflexive
+    symmetric
+    transitive
+7/15
+  commit and push several times per day
+    every 2-3 hours
+    many places require commits before lunch and before leaving for the day
+    do pull requests on your commits, so merging is other people's problem
+    commit, pull, push, pull request, repeat
+    prevents getting behind
+    if you can't do this, your stories are too big
+  last demo day: 7/31
+    mostly a retrospective
+      what you have as a product
+      what you've learned
+      where you are
+    last sprint
+      feature freeze
+      documentation
+  8/1 final exam
+    Effective Java
+    what was it like on your team this semester?
+  chapter 3
+    those methods which are common to all classes
+      .equals() is hard to get right
+        especially when you're adding values to a derived classes
+        That's one reason why we favor composition over inheritance.
+    don't write an equals method that depends on unreliable resources
+    recipe
+      check obect == this
+        it had better be equal to itself!
+      use isntanceof to check for the correct type
+      cast the argument to the correct type
+      test == for all significant fields
+        except for Float.compare, Double.compare, and Arrays.equal
+      also override hashCode()
+        the reason is maps and sets
+        returns an integer representation of that object
+        if two objects are .equals(), both hashCodes must be the same
+        performance will be poor if there are too many collisions
+      use @override
+    Java
+      set result = 17 (prime number)
+      for each field in an object:
+        if boolean, c = f ? 1 : 0
+        if byte, char, short, or int, c = (int) f
+        if long, c = (int) (f ^ (f >>> 32))
+        if float, c = Float.floatToIntBits(f)
+        if double, c = (int) (Double.doubleToLongBits(f) ^ (Double.doubleToLongBits(f) >>> 32))
+        then update result = 21 * result + c
+        exclude any redundant fields
+          (which you shouldn't have anyway)
+        ignore any fields ignored by equals
+    whenever you do .equals(), also do .hashCode()!
+    override .toString()
+      makes classes more pleasant to use
+      look up Project Lombok
+        a java library that automatically plugs into your editor and build tools,
+          spicing up your java
+        never write another getter or equals method again,
+          with one annotation your class has a fully featured builder,
+          automate your logging variables, and much more
+    override .clone() judiciously
+      i.e. don't do it!
+        it's hard to get right
+        it was a bad idea and we never should have added it to Java
+          they're not bad in every language - Java just did it wrong
+      you not only have to clone what you're cloning...
+        ... you also need to clone its elements
+      no need to provide .clone() for immutable objects
+      instead, can provide copy constructor or factory
+        public Foo(Foo foo)
+        public static Foo newInstance(Foo foo)
+      interfaces should not extend Cloneable
+      classes designed for inheritance should *not* implement it!
+    consider implementing Comparable
+      must implement .compareTo(other)
+        return:
+           0 if equal
+          -1 if less than
+           1 if greater than
+      Java gets .compareTo() wrong on BigDecimal
+  chapter 4: classes & interfaces
+    minimize accessibility of classes & members
+      "The single most important factor that distinguishes
+        a well-designed module from a poorly designed one
+        is the degree to which the module hides its internal data
+        and other implementation details from other modules."
+      make each class or member as inaccessible as possible
+      try to avoid protected
+        subclasses could change the meaning of instance variables
+      if a method overrides a superclass method, it must have the same access level 
+        to not violate the Liskov inversion principle
+          any place where you can use the superclass, you should be able to use the subclass
+          so subclasses may add functionality, but never change it or take it away
+      implementing an interface requires all methods be public
+      instance fields should never be public
+        limits typing
+        limits invariants
+        not thread-safe
+          to make instance variables thread-safe, keep them private and final
+        Arrays are always mutable.
+          Never have a public static final array field.
+          or an accessor that returns such a beast
+          be careful of IDEs that create accessors automatically!
+          Instead return a *copy* of the Array!
+            you don't wanna modify your Arrays
+    minimize mutability
+    both of these things create global variables
+    in public classes, use accessor methods - not public fields
+      the book uses lame examples, according to Dr. Beaty
