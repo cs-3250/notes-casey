@@ -1111,4 +1111,81 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
     minimize mutability
     both of these things create global variables
     in public classes, use accessor methods - not public fields
-      the book uses lame examples, according to Dr. Beaty
+      the book uses lame examples of sets
+        according to Dr. Beaty, this is the same as making everything public?
+7/17
+  application for C2C coming out soon
+    college to career
+  8/19 15:00-17:00 (Thursday?) - pizza, lawyers
+    Molly Weller
+  in public classes, use accessor methods - not public fields
+    final, private, etc.
+  minimize mutability
+    all information should be provided at construction
+    object construction is cheap in java, but mutability is expensive
+      so don't change; copy to new a object
+        same cost
+    make classes final or use a private no-arguments constructor to prevent extension
+    make all fields final & private
+      unless there is a compelling reason not to
+    don't return arrays or other references to objects
+      then clients can change them
+        and the object now contains references to things out of its control
+    immutable objects are thread-safe
+      implicitly parallelizable
+      no synchronization needed
+  learn another language
+    Dr. Beaty's recommendation:
+      Scala
+        most in-demand functional programming language
+        there are some bad scala websites out there
+          so hit him up for good resources
+      also Kotlin
+  favor composition over inheritance
+    Go4
+    inheritance violates encapsulation
+      subclass must know internal details of superclass in order to correctly extend functionality
+        however, at least with prototypical inheritance, you know when you're violating encapsulation
+    inheritance is an 'is-a' relationship
+  Java convention
+    run super constructor before sub constructor
+  abstract methods
+    recent versions of Java allow implementation of static methods in abstract methods
+  interfaces
+    useful for polymorphism
+    use interfaces only to define types
+7/18
+  brutal honesty is offer to give early
+  technology is not always the answer
+  languages are opinionated
+  prefer class hierarchies to tagged classes
+    tagged classes come to java from C++
+    they quickly become untenable
+    use abstract base classes and/or inheritance instead
+  nowadays
+    cognitive load (understanding of code) is more important than computational complexity
+    caching behavior is more important to overall memory usage
+  write the clearest code you can, test it, and *then* if it's slow figure out why
+  use function objects to represent strategies
+  Java is just getting around to adding method references like in Python
+  four different kinds of nested methods in Java:
+    static (not dynamically created)
+    inner classes:
+      non-static
+      anonymous
+      local
+  favor static member classes over non-static
+    could have been a completely different class outside
+  anonymous classes are declared and instantiated at the same place
+  local classes
+    classes inside methods
+  generic types
+    Java has a complex typing system
+      Python's is easy
+    generic types allow for type-checking at compile-time, rather than at runtime
+    List<String>: the raw type is List, the derived type is a List of Strings
+    <?> unbounded wildcard - only for truly generic methods
+  prefer Lists to Arrays
+    because Arrays are covariant, and Lists aren't
+      if sub is a subtype of super, sub[] is a subtype of super[]
+    so use ArrayLists
