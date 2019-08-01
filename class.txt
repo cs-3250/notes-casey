@@ -1189,3 +1189,158 @@ vim: et ts=2 sts=2 sw=2 spell spelllang=en_us
     because Arrays are covariant, and Lists aren't
       if sub is a subtype of super, sub[] is a subtype of super[]
     so use ArrayLists
+7/22
+  chapter 5
+    prefer lists to arrays
+      arrays are covariant
+        if sub is a subtype of super, sub[] is a subtype of super[]
+        arrays are reified
+          types only checked at runtime
+      generics (lists) are invariant
+        list<String> is not a subtype of List<Object>
+          even though String is a subtype of Object
+          however, every object is a subtype of itself
+        compile-time type-checking
+        cannot create arrays of generic types, parameterized types, or type parameters
+    use bounded wildcards in methods that have producer or consumer parameters
+      <? extends E> producer
+      <? super E>   consumer
+    if you have a producer/consumer problem at some point, look into streams instead
+  chapter 6: enumerations and annotations
+    Java enumerations are more powerful than other languages'
+      they're almost classes
+      they're final
+      they provide compile-time type safety
+      they can have private variables, accessible via the traditional dot notation
+      tips:
+        don't count on ordinal values
+          use a constructor instead
+        use EnumSets instead of bit fields
+    annotations
+      prefer annotations to naming patterns
+        example: JUnit
+      consistently use @Override
+        makes sure you're actually over
+        especially for equals, toString, and hashCode
+    marker interfaces
+      ones without methods
+      example: Serializable
+        indicates an object can be written via ObjectOutputStream
+  reflection (AKA introspection)
+    examples: JUnit, Spring, Struts, Hibernate (object-relational mapping)
+    information on:
+      classes & inheritance
+      methods (and constructors)
+      fields
+      modifiers
+    can change fields and modifiers
+    can't add/delete classes, fields, and other methods
+    class.forName() - find a class by its name
+    java.lang.reflect
+    .getSuperclass()
+    .getDeclaredClasses() - get anything declared inside of a class
+    .getDeclaringClass()
+    .getEnclosingCLass()
+    .getDeclaredFields() - instance variables
+7/24
+  program defensively
+    don't trust the people calling your method
+    check: positive/negative, non-null, not zero-length
+    precondition:
+      what happens 
+      what does it return?
+    invariance
+      what doesn't change?
+    fail fast
+      as soon as you know there's a problem, stop, throw an exception, show error messages, etc.
+      one of the reasons for raising exceptions:
+        so the caller can recover if possible
+      to turn on assertions in Java, use CLI argument -ea or:
+        ClassLoader.getSystemClassLoader().setDefaultAssertionStatus(true);
+    values stored for later use must be good
+    checks in constructors are important
+    check before doing any calculation
+    assume the worst of your class's clients
+      don't pass back references, because they will change things
+    shallow vs. deep copy
+      shallow - copy references
+      deep - copy values
+    return a copy to prevent changes by reference
+      non-zero-length arrays are always mutable, so always return a copy
+    use short parameters lists
+      varargs
+        ellipsis in Java (...)
+      maybe pass in a class that encapsulates multiple parameters
+      prefer interfaces for parameters
+      avoid booleans (because then caller always has to remember)
+        favor enumerations
+    use overloading judiciously
+      overloading happens at compile time
+        so parameters will be of base type and not specific type
+      instanceof works, because it happens at runtime
+      overriding also happens at runtime
+    overloaded meaning
+      list.remove(i) removes value i
+      set.remove(i) removes index i
+    write good JavaDoc documentation
+7/25
+  arrived 45 minutes late
+    consult team's notes
+  talk of "lambda calculus"
+  standard functional interfaces
+    operators
+      results and arguments are all of the same type
+    predicate
+      returns a boolean
+      Predicate<String> isALongWord = t -> t.length > 10;
+    function
+      arguments and return types differ
+    supplier (Python's generators)
+      takes no argument but returns a value
+      IntStream.range(0, 10).forEach(System.out::println);
+        must have a collector (e.g. forEach) at the end of your stream
+          otherwise nothing will happen!
+      in parallel (with threading):
+        IntStream.range(0, 10).parallel().forEach(System.out::println);
+      Stream.of("one", "two", "three", "four")
+        .filter(e -> e.length() > 3)
+        .peek(e -> System.out.println("Filtered value: " + e))
+        .map(String::toUpperCase)
+        .peek(e -> System.out.println("Mapped value: " + e))
+        .collect(Collectors.toList());
+      IntStream.iterate(0, i -> i + 2)
+        .limit(3)
+        .forEach(System.out::println);
+      IntStream.generate
+        (() ->
+    consumer (collectors)
+      takes arguments but returns nothing
+    UnaryOperator
+    BinaryOperator
+    Predicate
+    Function
+      R apply(T t)
+      Arrays::asList
+    Supplier
+      T get ()
+      Instant::now
+    Consumer
+      void accept (T t)
+      System.out::println
+    streams
+      executed lazily
+    fluent programming
+    .collect() - group things together (e.g. from a supplier/stream)
+    .reduce takes two things and adds them together
+    what lambdas are, do, and when they're useful
+    what streams are, do, and when they're useful
+    method references
+7/29
+  regular expressions
+    ranges
+    anchors
+  web crawlers
+    wget
+    cURL
+    REplican
+      Dr. Beaty's regex webcrawler
